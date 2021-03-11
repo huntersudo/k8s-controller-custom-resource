@@ -89,7 +89,7 @@ func NewController(
 			oldNetwork := old.(*samplecrdv1.Network)
 			newNetwork := new.(*samplecrdv1.Network)
 			if oldNetwork.ResourceVersion == newNetwork.ResourceVersion {
-				// Periodic resync will send update events for all known Networks.
+				// Periodic resync will send update events for all known Networks.git
 				// Two different versions of the same Network will always have different RVs.
 				return
 			}
